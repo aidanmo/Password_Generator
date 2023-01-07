@@ -1,4 +1,4 @@
-!
+
 Welcome to the password generation web app! This project was created as part of a coding challenge for the Scrimba Front End Career Path course.
 This simple app allows you to generate a unique password with just a few clicks. Simply specify the desired password length, and whether or not 
 you want to include special characters and numbers. Once you've made your selections, click the "Generate Password" button and a new password 
