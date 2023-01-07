@@ -1,0 +1,235 @@
+:root {
+    --btn-color: #273549;
+    --componet-color: #1F2937;
+    --background-color: #1C1C1C;
+    --secondary-color: #BB86FC;
+    --text-color: #FFFFFF;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.componet-container {
+    height: 500px;
+    width: 500px;
+    margin: 100px auto;
+    background-color: var(--componet-color);
+}
+
+.element-group {
+    padding-left: 50px;
+    padding-top: 100px;
+}
+
+.title {
+    font-family: 'Karla';
+    color: var(--text-color);
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+#style-color {
+    color: var(--secondary-color);
+}
+
+#tag-line {
+    font-family: 'Inter';
+    font-size: 20px;
+}
+
+.password-output {
+    margin-top: 70px;
+}
+
+.password-btn {
+    margin-bottom: 10px;
+    height: 30px;
+    width: 250px;
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 5px;
+    font-family: "Inter";
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+
+.pass-options {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.toggle-options {
+    margin-left: 30px;
+    margin-top: -1px;
+
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.create-pass {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-family: 'Inter';
+    border-radius: 5px;
+    border: none;
+    width: 160px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.create-pass:hover {
+    background-color: #9e55fc;
+}
+
+.slider {
+    width: 140px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+.slider p {
+    font-size: 14px;
+    font-family: 'Inter';
+    font-weight: bold;
+    color: var(--text-color)
+}
+
+.slider input[type="range"] {
+    -webkit-appearance: none !important;
+    width: 130px;
+    height: 1px;
+    background: var(--secondary-color);
+    border: none;
+    outline: none;
+}
+
+.slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    width: 20px;
+    height: 20px;
+    background: #1F2937;
+    border: 1px solid var(--secondary-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider input[type="range"]::-webkit-slider-thumb:hover {
+    background: var(--secondary-color);
+}
+
+.slider-label {
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-right: 2px;
+}
+
+.toggle {
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.toggle-switch {
+    display: inline-block;
+    background: var(--btn-color);
+    border-radius: 16px;
+    width: 28px;
+    height: 15px;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+}
+
+.toggle-switch:before,
+.toggle-switch:after {
+    content: "";
+}
+
+.toggle-switch:before {
+    display: block;
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left 0.25s;
+}
+
+.toggle:hover .toggle-switch:before {
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.toggle-checkbox:checked+.toggle-switch {
+    background: var(--secondary-color);
+}
+
+.toggle-checkbox:checked+.toggle-switch:before {
+    left: 15px;
+}
+
+.toggle-checkbox {
+    position: absolute;
+    visibility: hidden;
+}
+
+.toggle-label {
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 20%;
+    opacity: 0.2;
+    transition: opacity 0.4s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 0.5;
+}
