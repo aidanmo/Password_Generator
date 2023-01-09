@@ -7,4 +7,8 @@ will be generated for you. You can easily copy the password to your clipboard by
 This app is designed to help you create strong, secure passwords for all of your online accounts. Whether you're setting up a new account or 
 just looking to update your current passwords, this app has got you covered. So give it a try, and start generating secure passwords today!
 
+
+<img width="624" alt="Screen Shot 2023-01-06 at 11 47 35 PM" src="https://user-images.githubusercontent.com/121648052/211380906-a1fc182d-4741-403a-af21-3ed58031e354.png">
+
+
 Try it out here: https://password-private.netlify.app/
